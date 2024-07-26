@@ -23,7 +23,7 @@ import AvatarGroup from '../components/AvatarGroup';
 import ProgessBarComponent from '../components/ProgessBarComponent';
 import {fontFamilies} from '../constants/fontFamilies';
 
-const HomeScreen = () => {
+const HomeScreen = ({navigation}: any) => {
   return (
     <View style={{flex: 1}}>
       <Container>
@@ -150,6 +150,7 @@ const HomeScreen = () => {
         }}>
         <TouchableOpacity
           activeOpacity={1}
+          onPress={() => navigation.navigate('AddNewTask')}
           style={[
             globalStyles.row,
             {
