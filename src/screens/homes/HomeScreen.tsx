@@ -7,21 +7,22 @@ import {
 } from 'iconsax-react-native';
 import React from 'react';
 import {TouchableOpacity, View} from 'react-native';
-import CardComponent from '../components/CardComponent';
-import Container from '../components/Container';
-import RowComponent from '../components/RowComponent';
-import SectionComponent from '../components/SectionComponent';
-import TextComponent from '../components/TextComponent';
-import TitleComponent from '../components/TitleComponent';
-import {colors} from '../constants/colors';
-import {globalStyles} from '../styles/globalStyles';
-import TagComponent from '../components/TagComponent';
-import SpaceComponent from '../components/SpaceComponent';
-import CicularComponent from '../components/CicularComponent';
-import CardImageComponent from '../components/CardImageComponent';
-import AvatarGroup from '../components/AvatarGroup';
-import ProgessBarComponent from '../components/ProgessBarComponent';
-import {fontFamilies} from '../constants/fontFamilies';
+import CardComponent from '../../components/CardComponent';
+import Container from '../../components/Container';
+import RowComponent from '../../components/RowComponent';
+import TextComponent from '../../components/TextComponent';
+import TitleComponent from '../../components/TitleComponent';
+import {colors} from '../../constants/colors';
+import {globalStyles} from '../../styles/globalStyles';
+import TagComponent from '../../components/TagComponent';
+import SpaceComponent from '../../components/SpaceComponent';
+import CicularComponent from '../../components/CicularComponent';
+import CardImageComponent from '../../components/CardImageComponent';
+import AvatarGroup from '../../components/AvatarGroup';
+import ProgessBarComponent from '../../components/ProgessBarComponent';
+import {fontFamilies} from '../../constants/fontFamilies';
+import SectionComponent from '../../components/SectionComponent';
+import SearchScreen from '../SearchScreen';
 
 const HomeScreen = ({navigation}: any) => {
   return (
@@ -41,7 +42,7 @@ const HomeScreen = ({navigation}: any) => {
         <SectionComponent>
           <RowComponent
             styles={[globalStyles.inputContainer]}
-            onPress={() => console.log('Say hi')}>
+            onPress={() => navigation.navigate(SearchScreen)}>
             <TextComponent color="#696B6F" text="Search task" />
             <SearchNormal1 size={20} color={colors.desc} />
           </RowComponent>
