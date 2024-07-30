@@ -1,10 +1,10 @@
-import {View, Text, TextInput, TouchableOpacity} from 'react-native';
 import React, {ReactNode} from 'react';
-import TitleComponent from './TitleComponent';
-import RowComponent from './RowComponent';
-import {globalStyles} from '../styles/globalStyles';
+import {TextInput, TouchableOpacity, View} from 'react-native';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import {colors} from '../constants/colors';
+import {globalStyles} from '../styles/globalStyles';
+import RowComponent from './RowComponent';
+import TitleComponent from './TitleComponent';
 interface Props {
   value: string;
   onChange: (val: string) => void;

@@ -1,6 +1,5 @@
-import {View, Text, ImageBackground} from 'react-native';
 import React, {ReactNode} from 'react';
-import {colors} from '../constants/colors';
+import {ImageBackground, View} from 'react-native';
 import {globalStyles} from '../styles/globalStyles';
 
 interface Props {

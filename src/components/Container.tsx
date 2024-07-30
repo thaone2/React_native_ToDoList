@@ -1,28 +1,4 @@
-// import {View, Text, ScrollView} from 'react-native';
-// import React, {ReactNode} from 'react';
-// import {globalStyles} from '../styles/globalStyles';
-// import {useNavigation} from '@react-navigation/native';
-
-// interface Props {
-//   title?: string;
-//   back?: boolean;
-//   right?: ReactNode;
-//   children: ReactNode;
-// }
-
-// const Container = (props: Props) => {
-//   const {title, back, right, children} = props;
-//   const navigation: any = useNavigation();
-
-//   return (
-//     <ScrollView style={[globalStyles.container, {paddingTop: 22}]}>
-//       {children}
-//     </ScrollView>
-//   );
-// };
-
-// export default Container;
-
+import {useNavigation} from '@react-navigation/native';
 import {ArrowLeft2} from 'iconsax-react-native';
 import React, {ReactNode} from 'react';
 import {ScrollView, TouchableOpacity, View} from 'react-native';
@@ -31,7 +7,6 @@ import {fontFamilies} from '../constants/fontFamilies';
 import {globalStyles} from '../styles/globalStyles';
 import RowComponent from './RowComponent';
 import TextComponent from './TextComponent';
-import {useNavigation} from '@react-navigation/native';
 
 interface Props {
   title?: string;
